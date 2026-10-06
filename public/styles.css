@@ -407,6 +407,7 @@ input::file-selector-button{border:1px solid var(--line-2);border-radius:999px;b
 .tariff-card h3{margin-bottom:4px}
 .tariff-card strong{display:block;font-family:var(--display);font-size:clamp(2rem,4vw,2.8rem);line-height:1.1;margin:12px 0;color:var(--volt);overflow-wrap:anywhere}
 .tariff-card p{margin:0;font-size:.95rem}
+.price-note+.tariff-grid{margin-top:26px}
 .review-cards span{color:var(--volt);letter-spacing:2px}
 .review-cards p{color:#fff;margin:10px 0}
 .review-cards cite{font-size:.9rem;color:var(--muted);font-style:normal}
