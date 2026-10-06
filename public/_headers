@@ -1,0 +1,21 @@
+# Règles d'en-têtes Cloudflare Pages
+
+# Pages légales : hors de Google (audit SEO, action 5)
+/mentions-legales/*
+  X-Robots-Tag: noindex
+/confidentialite/*
+  X-Robots-Tag: noindex
+/cookies/*
+  X-Robots-Tag: noindex
+/conditions-utilisation/*
+  X-Robots-Tag: noindex
+/conditions-de-vente/*
+  X-Robots-Tag: noindex
+/merci.html
+  X-Robots-Tag: noindex
+
+# Polices et images : cache long
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/*.webp
+  Cache-Control: public, max-age=2592000

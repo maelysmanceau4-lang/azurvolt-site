@@ -1,9 +1,0 @@
-# Règles d'en-têtes Cloudflare Pages
-# Pages légales : hors de Google (audit SEO, action 5). Adapter les chemins aux vraies URLs.
-# /mentions-legales/*
-#   X-Robots-Tag: noindex
-# /politique-de-confidentialite/*
-#   X-Robots-Tag: noindex
-
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable
