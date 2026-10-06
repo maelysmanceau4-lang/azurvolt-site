@@ -10,14 +10,19 @@ public/                  ← tout ce qui est en ligne (dossier publié par Cloud
   index.html             ← page d'accueil
   electricien-cannes/    ← une page = un dossier avec son index.html
   ...                    ← autres pages services, villes, tarifs, zones, légales
-  assets/css/            ← feuilles de style
-  assets/js/             ← scripts
-  assets/img/            ← photos, logo
+  styles.css, script.js  ← feuille de style et script (styles-v14 / script-v14 : refonte non publiée)
+  *.webp, *.png          ← photos, logo
+  merci.html             ← page après envoi du formulaire (noindex)
   robots.txt
   sitemap.xml
   _headers               ← règles Cloudflare (noindex pages légales, cache)
   _redirects             ← redirections 301
 docs/                    ← notes, audits, guides (non publiés)
+```
+
+Le formulaire de contact est traité par le Worker Cloudflare `azurvolt-form` (hors dépôt) : ne pas le supprimer.
+
+```
 ```
 
 ## Publier une modification

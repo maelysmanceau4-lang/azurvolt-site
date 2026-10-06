@@ -1,9 +1,24 @@
 # Règles d'en-têtes Cloudflare Pages
-# Pages légales : hors de Google (audit SEO, action 5). Adapter les chemins aux vraies URLs.
-# /mentions-legales/*
-#   X-Robots-Tag: noindex
-# /politique-de-confidentialite/*
-#   X-Robots-Tag: noindex
 
-/assets/*
+# Pages légales et page de remerciement : hors de Google (audit SEO, action 5).
+# La balise <meta name="robots" content="noindex,follow"> est aussi dans chaque page.
+/mentions-legales/*
+  X-Robots-Tag: noindex, follow
+/confidentialite/*
+  X-Robots-Tag: noindex, follow
+/cookies/*
+  X-Robots-Tag: noindex, follow
+/conditions-utilisation/*
+  X-Robots-Tag: noindex, follow
+/conditions-de-vente/*
+  X-Robots-Tag: noindex, follow
+/merci.html
+  X-Robots-Tag: noindex, follow
+/merci
+  X-Robots-Tag: noindex, follow
+
+# Polices et images : cache long (les noms ne changent pas)
+/fonts/*
   Cache-Control: public, max-age=31536000, immutable
+/*.webp
+  Cache-Control: public, max-age=2592000

@@ -39,14 +39,17 @@ Il faut les fichiers actuels du site (`index.html`, dossiers des pages, images�
    - **Framework preset** : `None`
    - **Build command** : *(laisser vide)*
    - **Build output directory** : `public`
+   - Le site est déjà dans `public/` du dépôt (Étapes 0 à 2 faites).
 5. **Save and Deploy**. Attends le ✅ vert.
 6. Teste l'adresse fournie (`azurvolt-site.pages.dev`) : le site doit s'afficher à l'identique.
 
 ## Étape 4 — Basculer le domaine (5 min)
-1. Ancien projet Pages → **Custom domains** → retire `azurvolt.fr` et `www.azurvolt.fr`.
+1. Le site actuel tourne sur le Worker **`tiny-mountain-eba4`** (Workers & Pages → `tiny-mountain-eba4` → **Settings** → **Domains & Routes**) : vérifie que `azurvolt.fr` y apparaît, puis retire `azurvolt.fr` et `www.azurvolt.fr`.
 2. Nouveau projet `azurvolt-site` → **Custom domains** → **Set up a custom domain** → `azurvolt.fr`, puis `www.azurvolt.fr`.
 3. Cloudflare configure le DNS tout seul (domaine déjà chez Cloudflare). Coupure : quelques minutes max.
 4. Bonus SEO (audit) : domaine azurvolt.fr → **SSL/TLS** → **Edge Certificates** → **Always Use HTTPS** = ON (301 http → https).
+
+> ⚠️ **Ne supprime pas le Worker `azurvolt-form`** : c'est lui qui reçoit le formulaire de contact, envoie les e-mails et crée les fiches Notion. `tiny-mountain-eba4` ne se supprime qu'**après** la bascule, une fois `azurvolt.fr` vérifié sur le nouveau projet (formulaire testé, page `merci` OK).
 
 ## Étape 5 — Vérifier l'auto-déploiement
 1. Sur GitHub, ouvre `README.md` → crayon ✏️ → ajoute un mot → **Commit changes**.
