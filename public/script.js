@@ -63,7 +63,7 @@
     });
     window.addEventListener('pageshow', () => { submit.disabled = false; formStatus.textContent = ''; if (requestId) requestId.value = crypto.randomUUID(); });
   }
-  const heroCall = document.querySelector('.hero-price-card .button');
+  const heroCall = document.querySelector('.hero-home .primary');
   if (heroCall && 'IntersectionObserver' in window) {
     const small = matchMedia('(max-width: 900px)');
     const observer = new IntersectionObserver(entries => {
