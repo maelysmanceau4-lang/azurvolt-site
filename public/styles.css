@@ -609,4 +609,4 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 }
 .tile.feature.has-photo::after{opacity:1;background:linear-gradient(180deg,rgba(3,18,31,.2) 5%,rgba(3,18,31,.94) 70%);-webkit-mask-image:none;mask-image:none}
 .tile.split{display:grid;grid-template-columns:1fr 40%;padding:0;align-items:stretch}.tile.split .tile-txt{padding:24px 16px 24px 24px;display:flex;flex-direction:column;justify-content:flex-end;min-width:0}.tile.split .tile-img{display:block;width:100%;height:100%;min-height:200px;object-fit:cover;object-position:center 42%}
-.tile-bolt{position:absolute;right:-6%;top:-4%;width:62%;height:auto;color:var(--volt);opacity:.14;z-index:-1;transform:rotate(8deg);transition:opacity .4s,transform .6s cubic-bezier(.2,.8,.2,1)}.tile.feature:hover .tile-bolt{opacity:.22;transform:rotate(4deg) scale(1.03)}@media(max-width:639px){.tile-bolt{width:42%;top:-8%}}
+
