@@ -607,3 +607,4 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
   .subhero-photo{margin-top:18px;border-radius:var(--r-m)}
   .subhero-photo img{aspect-ratio:4/3}
 }
+.tile.feature.has-photo::after{opacity:1;background:linear-gradient(180deg,rgba(3,18,31,.2) 5%,rgba(3,18,31,.94) 70%);-webkit-mask-image:none;mask-image:none}
