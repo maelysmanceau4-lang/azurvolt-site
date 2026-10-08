@@ -601,3 +601,5 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 
 /* Sous-bandeau sans photo : pas de colonne vide */
 @media(min-width:900px){.subhero .wrap:not(:has(.subhero-photo)){padding-right:0}}
+
+.aside-photo{display:block;width:88px;height:88px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 8px 20px -10px rgba(11,42,69,.5);margin:0 0 12px}
