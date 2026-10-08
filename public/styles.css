@@ -16,7 +16,7 @@
 }
 *{box-sizing:border-box}
 /* Zones restées sombres : on y repasse les jetons du thème nuit */
-.topline,.header,.footer,.zone,.tile.feature,.inline-price,.cookie-consent,.mobile-actions,.offer-band,.mobile-menu nav,.desktop .nav-dropdown>div{
+.topline,.header,.footer,.zone,.tile.feature,.inline-price,.mobile-actions,.offer-band,.mobile-menu nav,.desktop .nav-dropdown>div{
   --text:#eef6fc;--text-2:#cfe0ec;--muted:#a9c3d6;--ink:#fff;--azur:#1fa7f0;--azur-soft:#8fd3fb;
   --line:rgba(143,211,251,.16);--line-2:rgba(143,211,251,.3);--surface:rgba(255,255,255,.06);--surface-2:rgba(255,255,255,.1);color:var(--text)}
 .tile.has-photo,.photo figcaption,.m-item figcaption{--ink:#fff;--text-2:#e8f0f6;color:#fff}
@@ -446,14 +446,13 @@ input::file-selector-button{border:1px solid var(--line-2);border-radius:999px;b
 body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 
 /* ---------- Consentement ---------- */
-.cookie-consent{position:fixed;left:12px;right:12px;bottom:12px;z-index:90;max-width:540px;margin:0 auto;display:grid;gap:10px;padding:18px 20px;border-radius:20px;background:rgba(7,38,64,.96);border:1px solid var(--line-2);box-shadow:0 20px 50px -10px rgba(0,0,0,.7);color:var(--text)}
-.cookie-consent .cookie-title{font-size:1.05rem;margin:0;color:var(--ink)}
-.cookie-consent p{margin:0;font-size:.9rem;line-height:1.5;color:var(--text-2)}
+.cookie-consent{position:fixed;left:10px;right:10px;bottom:10px;z-index:90;max-width:520px;margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 12px 10px 16px;border-radius:16px;background:#fff;border:1px solid var(--line-2);box-shadow:0 10px 30px -12px rgba(11,42,69,.35);color:var(--text)}
+.cookie-consent p{margin:0;flex:1 1 220px;font-size:.84rem;line-height:1.4;color:var(--text-2)}
 .cookie-consent a{color:var(--azur-soft);text-decoration:underline}
-.cookie-actions{display:flex;gap:10px}
-.cookie-btn{flex:1;min-height:46px;border-radius:999px;border:1.5px solid rgba(255,255,255,.55);background:transparent;color:var(--ink);font-weight:700;font-size:.95rem}
-.cookie-btn:hover{background:rgba(255,255,255,.1)}
-@media(min-width:900px){.cookie-consent{left:auto;right:24px;bottom:24px;margin:0}}
+.cookie-actions{display:flex;gap:8px}
+.cookie-btn{min-height:40px;padding:0 16px;border-radius:999px;border:1.5px solid var(--line-2);background:#fff;color:var(--ink);font-weight:700;font-size:.88rem;cursor:pointer}
+.cookie-btn:hover{background:var(--surface-2)}
+@media(min-width:900px){.cookie-consent{left:auto;right:20px;bottom:20px;margin:0;max-width:440px}}
 
 /* ---------- Réveil au défilement (étapes uniquement) ---------- */
 

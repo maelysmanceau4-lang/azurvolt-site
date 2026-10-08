@@ -147,7 +147,7 @@
     const tag = document.createElement('script');
     tag.id = 'cf-analytics';
     tag.defer = true;
-    tag.src = '../static.cloudflareinsights.com/beacon.min.js';
+    tag.src = 'https://static.cloudflareinsights.com/beacon.min.js';
     tag.setAttribute('data-cf-beacon', '{"token": "7fdee28fe9224031834a1c987e848f77"}');
     document.body.appendChild(tag);
   };
@@ -167,9 +167,8 @@
     if (!banner) {
       banner = document.createElement('section');
       banner.className = 'cookie-consent';
-      banner.setAttribute('aria-labelledby', 'cookie-title');
-      banner.innerHTML = '<h2 id="cookie-title" class="cookie-title">Mesure d’audience</h2>'
-        + '<p>Avec votre accord, nous mesurons la fréquentation du site avec Cloudflare Web Analytics, sans cookie publicitaire. Vous pouvez changer d’avis à tout moment. <a href="/cookies/">En savoir plus</a></p>'
+      banner.setAttribute('aria-label', 'Mesure d’audience');
+      banner.innerHTML = '<p>Mesure de fréquentation anonyme, seulement si vous êtes d’accord. <a href="/cookies/">En savoir plus</a></p>'
         + '<div class="cookie-actions"><button type="button" class="cookie-btn" data-choice="refuse">Refuser</button>'
         + '<button type="button" class="cookie-btn" data-choice="accept">Accepter</button></div>';
       document.body.appendChild(banner);
