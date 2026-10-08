@@ -395,7 +395,6 @@ input::file-selector-button{border:1px solid var(--line-2);border-radius:999px;b
 .legal-nav a:hover{background:var(--surface-2);color:var(--ink)}
 .a-completer{background:#ffe9a8;color:#5a4300;padding:1px 6px;border-radius:4px;font-weight:700}
 .model-form p{font-size:.95rem}
-.consent-status{color:var(--azur-soft)}
 .success{min-height:62vh;display:grid;align-items:center;text-align:center;background:radial-gradient(50% 60% at 50% 30%,rgba(10,111,209,.1),transparent 70%),var(--deep)}
 .success .wrap{max-width:720px}
 .success .lead{margin-inline:auto}
@@ -436,23 +435,12 @@ input::file-selector-button{border:1px solid var(--line-2);border-radius:999px;b
 .footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px 24px;padding:22px 0 26px;border-top:1px solid var(--line);font-size:.84rem}
 .footer-bottom a:hover{color:var(--ink)}
 .footer-legal{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}
-.cookie-manage{background:none;border:0;padding:0;color:inherit;font:inherit;text-decoration:underline;cursor:pointer}
-.cookie-manage:hover{color:var(--ink)}
 
 /* ---------- Barre d'actions mobile ---------- */
 .mobile-actions{display:none}
 .bar-hidden .mobile-actions{transform:translateY(140%);visibility:hidden}
-.consent-open .mobile-actions{visibility:hidden}
 body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 
-/* ---------- Consentement ---------- */
-.cookie-consent{position:fixed;left:10px;right:10px;bottom:10px;z-index:90;max-width:520px;margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 12px 10px 16px;border-radius:16px;background:#fff;border:1px solid var(--line-2);box-shadow:0 10px 30px -12px rgba(11,42,69,.35);color:var(--text)}
-.cookie-consent p{margin:0;flex:1 1 220px;font-size:.84rem;line-height:1.4;color:var(--text-2)}
-.cookie-consent a{color:var(--azur-soft);text-decoration:underline}
-.cookie-actions{display:flex;gap:8px}
-.cookie-btn{min-height:40px;padding:0 16px;border-radius:999px;border:1.5px solid var(--line-2);background:#fff;color:var(--ink);font-weight:700;font-size:.88rem;cursor:pointer}
-.cookie-btn:hover{background:var(--surface-2)}
-@media(min-width:900px){.cookie-consent{left:auto;right:20px;bottom:20px;margin:0;max-width:440px}}
 
 /* ---------- Réveil au défilement (étapes uniquement) ---------- */
 
@@ -565,7 +553,7 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
   .mobile-actions .button svg{display:none}
 }
 @media(pointer:coarse),(max-width:900px){
-  .footer-grid a,.footer-legal a,.cookie-manage,.footer-bottom a{display:inline-flex;align-items:center;min-height:40px}
+  .footer-grid a,.footer-legal a,.footer-bottom a{display:inline-flex;align-items:center;min-height:40px}
   .footer-grid a{display:flex}
 }
 @media(prefers-reduced-motion:reduce){
