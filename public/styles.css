@@ -213,7 +213,7 @@ strong{color:var(--ink)}
 .city span strong{color:var(--volt)}
 
 /* ---------- Avis ---------- */
-.reviews{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
 .rev{margin:0;padding:32px;border-radius:var(--r-l);background:#fff;border:1px solid var(--line);box-shadow:0 18px 40px -30px rgba(11,42,69,.4)}
 .rev .stars,.stars{color:var(--star);letter-spacing:3px;font-size:1.1rem}
 .rev blockquote{margin:14px 0 0;font-size:1.12rem;line-height:1.6;color:var(--ink)}
@@ -603,3 +603,5 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 @media(min-width:900px){.subhero .wrap:not(:has(.subhero-photo)){padding-right:0}}
 
 .aside-photo{display:block;width:88px;height:88px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 8px 20px -10px rgba(11,42,69,.5);margin:0 0 12px}
+
+.review-cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
