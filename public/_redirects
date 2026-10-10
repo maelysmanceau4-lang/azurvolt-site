@@ -1,3 +1,5 @@
 # Redirections 301 (ancienne-url  nouvelle-url  301)
 # La redirection http -> https et www -> azurvolt.fr se règle dans Cloudflare (voir docs/GUIDE-github-cloudflare.md) :
 # ce fichier ne voit que le chemin, pas le protocole ni le domaine.
+/electricien-mandelieu  /electricien-mandelieu-la-napoule/  301
+/electricien-mandelieu/  /electricien-mandelieu-la-napoule/  301
