@@ -130,4 +130,26 @@
       seen.observe(steps);
     } else steps.classList.add('in');
   }
+  // Avis : carrousel (points de repère et flèches)
+  document.querySelectorAll('[data-carousel]').forEach(track => {
+    const items = Array.from(track.children);
+    if (items.length < 2) return;
+    const nav = document.createElement('div');
+    nav.className = 'rev-nav';
+    nav.innerHTML = '<div class="rev-dots" aria-hidden="true">' + items.map(() => '<span></span>').join('') + '</div>'
+      + '<div class="rev-arrows"><button type="button" aria-label="Avis précédent" data-dir="-1">←</button><button type="button" aria-label="Avis suivant" data-dir="1">→</button></div>';
+    track.insertAdjacentElement('afterend', nav);
+    const dots = Array.from(nav.querySelectorAll('.rev-dots span'));
+    const update = () => {
+      const x = track.scrollLeft;
+      let best = 0;
+      items.forEach((item, i) => { if (Math.abs(item.offsetLeft - track.offsetLeft - x) < Math.abs(items[best].offsetLeft - track.offsetLeft - x)) best = i; });
+      dots.forEach((dot, i) => dot.classList.toggle('on', i === best));
+    };
+    track.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+    nav.querySelectorAll('button').forEach(button => button.addEventListener('click', () => {
+      track.scrollBy({ left: Number(button.dataset.dir) * (items[0].offsetWidth + 16), behavior: 'smooth' });
+    }));
+    update();
+  });
 })();

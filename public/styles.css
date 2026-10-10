@@ -605,3 +605,17 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 .aside-photo{display:block;width:88px;height:88px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 8px 20px -10px rgba(11,42,69,.5);margin:0 0 12px}
 
 .review-cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+
+/* Avis : carrousel à faire glisser */
+.carousel{display:flex!important;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 2px 14px;margin:0 -2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.carousel::-webkit-scrollbar{display:none}
+.carousel>*{flex:0 0 min(86%,360px);scroll-snap-align:start;margin:0}
+.carousel:focus-visible{outline:2px solid var(--azur);outline-offset:4px;border-radius:12px}
+.rev-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:6px 0 0}
+.rev-dots{display:flex;gap:8px;align-items:center}
+.rev-dots span{width:8px;height:8px;border-radius:50%;background:var(--line-2);transition:background .2s,transform .2s}
+.rev-dots span.on{background:var(--azur);transform:scale(1.25)}
+.rev-arrows{display:none;gap:8px}
+.rev-arrows button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line-2);background:#fff;color:var(--ink);font-size:1.2rem;cursor:pointer}
+.rev-arrows button:hover{background:var(--surface-2)}
+@media(min-width:900px){.rev-arrows{display:flex}}
