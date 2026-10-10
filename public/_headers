@@ -12,6 +12,8 @@
   X-Robots-Tag: noindex, follow
 /conditions-de-vente/*
   X-Robots-Tag: noindex, follow
+/sms/*
+  X-Robots-Tag: noindex, follow
 /merci.html
   X-Robots-Tag: noindex, follow
 /merci
