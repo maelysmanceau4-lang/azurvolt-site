@@ -619,3 +619,5 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 .rev-arrows button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line-2);background:#fff;color:var(--ink);font-size:1.2rem;cursor:pointer}
 .rev-arrows button:hover{background:var(--surface-2)}
 @media(min-width:900px){.rev-arrows{display:flex}}
+/* Ordinateur : tous les avis visibles d'un coup (grille 3 colonnes) ; le carrousel reste sur téléphone */
+@media(min-width:900px){.carousel{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;padding:0;margin:0}.carousel>*{flex:none}.carousel+.rev-nav{display:none}}
