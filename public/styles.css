@@ -623,3 +623,4 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 @media(min-width:900px){.carousel{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;padding:0;margin:0}.carousel>*{flex:none}.carousel+.rev-nav{display:none}}
 
 .lang-note{margin-top:14px;font-size:.92rem;color:var(--muted)}.lang-note a{color:var(--azur);font-weight:700}
+.topline-en{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:2px}
