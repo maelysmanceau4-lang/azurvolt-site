@@ -624,3 +624,8 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 
 .lang-note{margin-top:14px;font-size:.92rem;color:var(--muted)}.lang-note a{color:var(--azur);font-weight:700}
 .topline-en{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+
+.rev-featured{position:relative;border:2px solid var(--volt)!important;background:linear-gradient(180deg,#fffbea,#fff)!important}
+.rev-new{display:inline-block;margin-bottom:10px;padding:4px 12px;border-radius:999px;background:var(--volt);color:var(--volt-ink);font-size:.78rem;font-weight:700;letter-spacing:.02em}
+.rev-featured .rev-new+.stars,.rev-featured .rev-new+span{display:block}
+@media(min-width:900px){.carousel>.rev-featured{grid-column:1/-1;padding:36px 40px}.rev-featured blockquote,.review-cards .rev-featured p{font-size:1.3rem;line-height:1.55}}
