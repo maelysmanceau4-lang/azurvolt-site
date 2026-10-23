@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /mentions-legales/
-Disallow: /conditions-de-vente/
-Disallow: /conditions-utilisation/
-Disallow: /confidentialite/
-Disallow: /cookies/
 
 Sitemap: https://azurvolt.fr/sitemap.xml
