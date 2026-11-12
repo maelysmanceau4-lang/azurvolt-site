@@ -8,3 +8,11 @@
 - Cartes de contact : « Yoni Ayache, électricien, CAP Électricien » (le mot « artisan » attend la validation de la Chambre des métiers ; mentions légales inchangées).
 - Poids : logo en WebP, polices en WOFF2 (WOFF gardé en secours), fichiers inutilisés styles-v14.css et script-v14.js supprimés.
 - Feuille de style : styles.css?v=16.5.
+
+## 12/11/2026 – Harmonisation des pages intérieures (branche harmonisation-pages, non publié)
+- 25 pages : fond quadrillé bleu ciel, un mot du titre surligné en jaune, photo encadrée et inclinée avec éclair et pastille jaune, comme l'accueil. Aucun texte existant modifié.
+- Pastilles : prix repris du texte de la même page (110 / 120 / 130 €) ou « devis gratuit » / « prix annoncé ». Un prix qui change = une pastille de plus à corriger (pages villes, dépannage, prise, sèche-serviette, éclairage, tarifs, zones).
+- Pages sans photo (chauffe-eau et VMC, éclairage, gâche, clim, portail, English) : carte Yoni (14 ans, CAP, 7 j sur 7), à remplacer par de vraies photos au lot 3.
+- Boutons du haut de page et carte « On en parle ? » : WhatsApp à la place du SMS (pages en français). Le SMS reste dans le pied de page.
+- Titres du corps plus grands avec barre jaune, prix des cartes tarifs surlignés.
+- Feuille de style : styles.css?v=16.7.
