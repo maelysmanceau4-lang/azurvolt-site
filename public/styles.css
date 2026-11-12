@@ -657,6 +657,7 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 .subhero::before,.subhero::after{display:none}
 .subhero h1{line-height:1.03;max-width:20ch}
 .subhero h1 span{color:inherit}
+.subhero h1.long{font-size:clamp(1.9rem,3.6vw,3rem);max-width:26ch}
 .subhero h1 span.sub{display:block;font-size:.5em;line-height:1.2;font-weight:700;letter-spacing:-.01em;margin-top:.5em;max-width:28ch}
 .subhero h1 mark{background:linear-gradient(transparent 58%,#ffc928 58%,#ffc928 92%,transparent 92%);color:inherit;padding:0 .08em}
 .subhero .actions .button.secondary svg[fill="currentColor"]{width:20px;height:20px}
