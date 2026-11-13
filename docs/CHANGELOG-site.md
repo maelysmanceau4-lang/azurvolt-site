@@ -16,3 +16,9 @@
 - Boutons du haut de page et carte « On en parle ? » : WhatsApp à la place du SMS (pages en français). Le SMS reste dans le pied de page.
 - Titres du corps plus grands avec barre jaune, prix des cartes tarifs surlignés.
 - Feuille de style : styles.css?v=16.7.
+
+## 13/11/2026 – Finitions et étiquettes sobres (branche harmonisation-pages, non publié)
+- Finitions sur les 32 pages : carte de contact identique partout (photo, Appeler, WhatsApp, « Envoyer une photo »), icônes des boutons, fil d'Ariane, données Google (8 communes), photo du haut chargée en priorité, photo en double retirée sur 5 pages villes, WhatsApp avant SMS dans le pied de page.
+- 4 textes : « Devis gratuit sur photos » (accueil), « borne de recharge » retirée (tableau), « Parlez à Yoni » (7 pages), « Pour aller plus loin » (5 pages).
+- Étiquette des pages intérieures en version sobre (plaque blanche droite, filet jaune) à la place de la pastille jaune penchée, jugée trop « promo » par Maëlys. La pastille jaune reste sur l'accueil. Version jaune : commit 35c8002.
+- Carte Yoni : « Électricien à Cannes » sous le nom, pour ne plus écrire « CAP électricien » deux fois.
