@@ -30,3 +30,6 @@
 ## 14/11/2026 – Éclair dessiné et bandeau 110 € (branche eclair-dessine, non publié)
 - Éclair jaune dessiné (comme sur Insta) à la place de l'émoji, sur toutes les pages. styles.css?v=16.9.
 - Bandeau « Forfait dépannage 110 € » de l'accueil repris sur dépannage, tarifs et électricien Cannes. Surlignage jaune des prix des cartes tarifs retiré (Maëlys ne l'aime pas).
+
+## 14/11/2026 – Nouvelle photo de prise (branche photo-prise, non publié)
+- Photo de prise nettoyée par Maëlys, recadrée 4:5 (prise-nette-960/780.webp), pour l'accueil et la page Prises et interrupteurs. Attend son oui.
