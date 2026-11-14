@@ -22,3 +22,7 @@
 - 4 textes : « Devis gratuit sur photos » (accueil), « borne de recharge » retirée (tableau), « Parlez à Yoni » (7 pages), « Pour aller plus loin » (5 pages).
 - Étiquette des pages intérieures en version sobre (plaque blanche droite, filet jaune) à la place de la pastille jaune penchée, jugée trop « promo » par Maëlys. La pastille jaune reste sur l'accueil. Version jaune : commit 35c8002.
 - Carte Yoni : « Électricien à Cannes » sous le nom, pour ne plus écrire « CAP électricien » deux fois.
+
+## 14/11/2026 – Étiquette jaune partout
+- Maëlys choisit la pastille jaune penchée sur toutes les pages (accueil inchangé). Les 22 pages intérieures repassent de la plaque blanche sobre à la pastille jaune. Carte Yoni : « Électricien à Cannes » conservé sous le nom.
+- Feuille de style : styles.css?v=16.8.
