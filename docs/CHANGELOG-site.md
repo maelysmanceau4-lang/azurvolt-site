@@ -34,3 +34,6 @@
 ## 14/11/2026 – Nouvelle photo de prise (branche photo-prise, non publié)
 - Photo de prise nettoyée par Maëlys, recadrée 4:5 (prise-nette-960/780.webp), pour l'accueil et la page Prises et interrupteurs. Attend son oui.
 - Photo de prise redressée (correction de perspective, plaque d'aplomb) et recadrée avec la prise entière : prise-nette-960.webp (page Prises, inclinaison du cadre compensée) et prise-nette-tuile-780.webp (accueil).
+
+## 14/11 (logo bleu ciel, branche logo-bleu-ciel, NON publié)
+- Icônes (favicon, apple-touch, 192, 512) = renard fond bleu ciel ; en-tête clair avec logo couleur ; image de partage claire ; theme-color blanc ; CSS v17.1.

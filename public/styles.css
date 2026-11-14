@@ -711,3 +711,12 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 /* ===== Éclair dessiné (comme sur Insta), à la place de l'émoji (14/11) ===== */
 .bolt{font-size:0!important;width:64px;height:84px;right:-14px!important;top:-40px!important;background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 84'><polygon points='43%2C0 4%2C50 27%2C50 17%2C84 60%2C29 35%2C29' fill='%23ffc928'/></svg>") center/contain no-repeat;filter:drop-shadow(0 8px 10px rgba(5,29,49,.25))!important;transform:rotate(10deg)}
 @media(max-width:760px){.bolt{width:44px;height:58px;right:2px!important;top:-28px!important}}
+/* en-tête clair, logo couleur (14/11) */
+.header{--text-2:#34495b;--ink:#0b2236;--line:rgba(11,42,69,.1);--line-2:rgba(11,42,69,.2);--surface-2:#e8f1f9;background:rgba(255,255,255,.96);color:#0b2236}
+.header .brand img{filter:none}
+.desktop{color:#0b2236}
+.desktop .nav-dropdown>div,.nav-dropdown>div{background:#fff;box-shadow:0 20px 40px -18px rgba(11,42,69,.35)}
+@media(max-width:760px){.mobile-menu nav{background:#f4f9fe;box-shadow:0 30px 50px -20px rgba(11,42,69,.35)}}
+.mobile-menu nav a,.mobile-menu nav summary{color:#0b2236!important}
+.mobile-menu .nav-dropdown a,.nav-dropdown a{color:#34495b!important}
+.mobile-menu>summary{color:#0b2236}
