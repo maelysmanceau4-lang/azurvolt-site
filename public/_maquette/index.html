@@ -1,0 +1,111 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Maquette accueil</title>
+<style>
+@font-face{font-family:"Bricolage Grotesque";src:url("/fonts/bricolage-grotesque.woff2") format("woff2");font-weight:500 800}
+@font-face{font-family:"Figtree";src:url("/fonts/figtree.woff2") format("woff2");font-weight:400 700}
+:root{--nuit:#051d31;--nuit2:#0b2a45;--azur:#0a6fd1;--ciel:#eaf3fc;--jaune:#ffc928;--ink:#0b2238;--muted:#55697d;--line:#dfe8f1}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;font-family:Figtree,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.55;font-size:17px}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;letter-spacing:-.02em;margin:0;line-height:1.05}
+/* header */
+.top{background:var(--nuit);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:84px}
+.nav img{height:56px;width:auto}
+.nav nav{display:flex;gap:30px;font-weight:600;font-size:.95rem;color:#c9d8e6}
+.tel{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,.28);border-radius:99px;padding:10px 18px;font-weight:700;font-size:.95rem}
+.tel svg,.btn svg{width:18px;height:18px}
+/* hero */
+.hero{background:radial-gradient(900px 500px at 85% 0%,rgba(10,111,209,.38),transparent 65%),linear-gradient(180deg,var(--nuit) 0%,var(--nuit2) 100%);color:#fff;padding:54px 0 120px;position:relative}
+.hg{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:.9rem;color:#bcd3ea;margin-bottom:22px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.2)}
+h1{font-size:clamp(2.5rem,5vw,4.2rem);font-weight:800}
+h1 span{display:block}h1 .l2{color:#cfe2f5}
+h1 u{text-decoration:none;color:#fff;box-shadow:inset 0 -.14em 0 var(--jaune)}
+.lead{font-size:1.14rem;color:#c5d6e6;max-width:33em;margin:24px 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:14px;padding:15px 22px;font-weight:700;font-size:1rem}
+.btn.y{background:var(--jaune);color:var(--nuit)}
+.btn.g{border:1px solid rgba(255,255,255,.3);color:#fff}
+.rate{display:flex;align-items:center;gap:10px;margin-top:28px;font-size:.95rem;color:#c5d6e6}
+.stars{color:var(--jaune);letter-spacing:2px}
+.ph{position:relative}
+.ph>img{border-radius:28px;aspect-ratio:4/4.6;object-fit:cover;object-position:50% 20%;width:100%;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.who{position:absolute;left:18px;top:18px;display:flex;align-items:center;gap:10px;background:rgba(5,29,49,.72);backdrop-filter:blur(8px);color:#fff;border-radius:99px;padding:6px 16px 6px 6px;font-size:.86rem;font-weight:600}
+.who img{width:34px;height:34px;border-radius:50%}
+.quote{position:absolute;left:-36px;bottom:-34px;width:min(330px,82%);background:#fff;color:var(--ink);border-radius:18px;padding:16px 18px;box-shadow:0 24px 50px -20px rgba(5,29,49,.55);font-size:.93rem;line-height:1.45}
+.quote small{display:block;margin-top:8px;color:var(--muted);font-weight:600}
+/* preuves */
+.proof{margin-top:-64px;position:relative;z-index:2}
+.pg{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:22px;box-shadow:0 30px 60px -30px rgba(5,29,49,.35);border:1px solid var(--line)}
+.pg div{padding:26px 26px 24px;border-left:1px solid var(--line)}.pg div:first-child{border:0}
+.pg b{display:block;font-family:"Bricolage Grotesque";font-size:1.9rem;font-weight:800;line-height:1}
+.pg span{display:block;margin-top:8px;color:var(--muted);font-size:.93rem;line-height:1.35}
+/* sections */
+section.s{padding:96px 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}
+.sh h2{font-size:clamp(1.9rem,3.4vw,2.8rem);font-weight:800}
+.sh p{margin:0;color:var(--muted);max-width:26em}
+.kick{display:block;font-weight:700;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--azur);margin-bottom:12px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{border-radius:22px;overflow:hidden;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+.card img{aspect-ratio:16/11;object-fit:cover;width:100%}
+.card div{padding:22px 24px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.35rem;font-weight:800}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+.card .pr{margin-top:auto;padding-top:14px;display:flex;justify-content:space-between;align-items:center;font-weight:700;border-top:1px solid var(--line)}
+.card .pr em{font-style:normal;color:var(--azur)}
+.rows{margin-top:22px;display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}
+.row{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:17px 2px;border-bottom:1px solid var(--line);font-weight:600}
+.row span{color:var(--muted);font-weight:500;white-space:nowrap}
+.all{display:inline-block;margin-top:28px;font-weight:700;color:var(--azur);border-bottom:2px solid var(--jaune);padding-bottom:2px}
+/* yoni */
+.yoni{background:var(--ciel)}
+.yg{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.yg>img{border-radius:28px;aspect-ratio:4/4.4;object-fit:cover;width:100%}
+.yoni h2{font-size:clamp(1.9rem,3.4vw,2.8rem);font-weight:800;margin-bottom:18px}
+.yoni p{color:#3c5269;max-width:34em}.yoni p.b{color:var(--ink);font-weight:600;font-size:1.1rem}
+.facts{display:flex;gap:38px;margin-top:28px;padding-top:26px;border-top:1px solid #cfdeed}
+.facts b{display:block;font-family:"Bricolage Grotesque";font-size:1.7rem;font-weight:800;line-height:1}
+.facts span{color:var(--muted);font-size:.9rem}
+.sig{display:flex;align-items:center;gap:14px;margin-top:30px}.sig img{height:64px;mix-blend-mode:multiply}
+.sig span{font-size:.9rem;color:var(--muted)}
+/* avis */
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv figure{margin:0;border:1px solid var(--line);border-radius:20px;padding:24px}
+.rv blockquote{margin:12px 0 16px;font-size:1rem}
+.rv figcaption{font-weight:700;font-size:.92rem}.rv small{display:block;color:var(--muted);font-weight:500}
+@media(max-width:860px){
+ body{font-size:16px}.nav{height:68px}.nav nav{display:none}.nav img{height:44px}.tel span{display:none}.tel{padding:11px}
+ .hero{padding:30px 0 124px}.hg{grid-template-columns:1fr;gap:34px}
+ .lead{font-size:1.04rem;margin:18px 0 24px}.btn{padding:14px 18px}.btn.y{flex:1 1 100%;justify-content:center}.btn.g{flex:1;justify-content:center}
+ .quote{left:14px;bottom:-30px}.ph>img{aspect-ratio:4/4.2}
+ .pg{grid-template-columns:1fr 1fr}.pg div{padding:18px;border-left:0;border-top:1px solid var(--line)}.pg div:nth-child(-n+2){border-top:0}.pg div:nth-child(even){border-left:1px solid var(--line)}.pg b{font-size:1.5rem}
+ section.s{padding:64px 0}.sh{display:block}.sh p{margin-top:12px}
+ .cards,.rv,.rows,.yg{grid-template-columns:1fr}.yg{gap:30px}.facts{gap:22px}
+}
+</style></head><body>
+<header class="top"><div class="wrap nav"><img src="/logo-blanc@2x.webp" alt="Azur Volt"><nav><span>Prestations</span><span>Secteur</span><span>Tarifs</span><span>Contact</span></nav><a class="tel" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg><span>06 51 99 95 17</span></a></div></header>
+<section class="hero"><div class="wrap hg"><div>
+<span class="eyebrow"><i></i>7j/7 de 8h à 22h · Cannes et alentours</span>
+<h1><span>Votre électricien à&nbsp;Cannes.</span><span class="l2">Vous appelez Yoni, c’est <u>Yoni</u> qui vient.</span></h1>
+<p class="lead">Panne, tableau ou travaux : vous parlez directement à l’électricien qui intervient chez vous. Le prix est annoncé avant le déplacement.</p>
+<div class="cta"><a class="btn y" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>Appeler Yoni</a><a class="btn g" href="#">WhatsApp</a><a class="btn g" href="#">Devis avec photo</a></div>
+<div class="rate"><span class="stars">★★★★★</span>5,0 sur Google · 12 avis</div>
+</div><div class="ph"><img src="/yoni-tableau-960.webp" alt="Yoni Ayache intervient sur un tableau électrique"><span class="who"><img src="/yoni-portrait-160.webp" alt="">Yoni Ayache · CAP électricien</span>
+<div class="quote"><span class="stars">★★★★★</span><br>« Très professionnel ponctuel et souriant, beaucoup d'expérience très bon électricien sur Cannes »<small>Albano · avis Google</small></div></div></div></section>
+<div class="proof"><div class="wrap"><div class="pg"><div><b>110 €</b><span>Forfait dépannage : déplacement + 1re heure</span></div><div><b>7j/7</b><span>Dépannage et urgences, de 8h à 22h</span></div><div><b>Gratuit</b><span>Devis sur photos</span></div><div><b>Avant</b><span>Prix annoncé avant le déplacement</span></div></div></div></div>
+<section class="s"><div class="wrap"><div class="sh"><div><span class="kick">Prestations</span><h2>De quoi avez-vous besoin&nbsp;?</h2></div><p>Dépannage, installation ou rénovation, pour votre logement comme pour votre local professionnel.</p></div>
+<div class="cards">
+<a class="card" href="#"><img src="/yoni-raccordement-960.webp" alt=""><div><h3>Le courant saute ?</h3><p>Disjoncteur qui déclenche, prise en panne, coupure partielle : Yoni cherche l’origine de la panne.</p><span class="pr">Dépannage électrique<em>dès 110 €</em></span></div></a>
+<a class="card" href="#"><img src="/protections-960.webp" alt=""><div><h3>Un tableau à revoir ?</h3><p>Remplacement, protections et mise en sécurité du tableau.</p><span class="pr">Tableau électrique<em>sur devis</em></span></div></a>
+<a class="card" href="#"><img src="/prise-schneider-v3-780.webp" alt=""><div><h3>Une prise à ajouter ?</h3><p>Prise ou interrupteur standard, fourni et posé.</p><span class="pr">Prises et interrupteurs<em>110 €</em></span></div></a>
+</div>
+<div class="rows"><a class="row" href="#">Éclairage et luminaires<span>pose 120 €</span></a><a class="row" href="#">Sèche-serviette<span>pose dès 120 €</span></a><a class="row" href="#">Nettoyage de climatisation<span>dès 120 €</span></a><a class="row" href="#">Portail, volet, interphone<span>dès 110 €</span></a><a class="row" href="#">Chauffe-eau et VMC en panne<span>diagnostic 110 €</span></a><a class="row" href="#">Mise en sécurité<span>sur devis</span></a></div>
+<a class="all" href="#">Voir tous les tarifs</a></div></section>
+<section class="s yoni"><div class="wrap yg"><img src="/yoni-portrait-320.webp" alt="Yoni Ayache"><div><span class="kick">Qui vient chez vous</span><h2>Un électricien.<br>Un interlocuteur.</h2><p class="b">La personne à qui vous expliquez votre problème est celle qui intervient chez vous.</p><p>Yoni Ayache est électricien titulaire du CAP, avec 14 ans dans le bâtiment. Il vous explique la solution proposée, puis le tarif ou le devis, avant les travaux.</p>
+<div class="facts"><div><b>14 ans</b><span>dans le bâtiment</span></div><div><b>CAP</b><span>électricien</span></div><div><b>7 j sur 7</b><span>de 8h à 22h</span></div></div>
+<div class="sig"><img src="/logo-couleur@2x.png" alt="Azur Volt, le renard électricien"></div></div></div></section>
+<section class="s"><div class="wrap"><div class="sh"><div><span class="kick">Avis Google</span><h2>Ils ont fait appel à Yoni</h2></div><p><span class="stars">★★★★★</span> 5,0 sur 5, 12 avis Google</p></div>
+<div class="rv"><figure><span class="stars">★★★★★</span><blockquote>« Yoni est venu pour la Clim, Super travail, Très propre, Personne de confiance, je recommande vraiment »</blockquote><figcaption>aiken hugo<small>Visité en novembre</small></figcaption></figure><figure><span class="stars">★★★★★</span><blockquote>« Excellent prix. Yoni est intervenu à Cannes pour ma prise et mon chauffe-eau. Il a été ponctuel, a expliqué clairement ce qu'il faisait et le prix annoncé était respecté. »</blockquote><figcaption>Inna Biletska<small>Visité en octobre</small></figcaption></figure><figure><span class="stars">★★★★★</span><blockquote>« Tres bon electricien ! Je recommande vivement M. Ayache. Il a été reactif et a un fait du travail de qualité. »</blockquote><figcaption>Sanchez Ana Magaly<small>Visité en septembre</small></figcaption></figure></div></div></section>
+</body></html>
