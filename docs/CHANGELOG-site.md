@@ -26,3 +26,7 @@
 ## 14/11/2026 – Étiquette jaune partout
 - Maëlys choisit la pastille jaune penchée sur toutes les pages (accueil inchangé). Les 22 pages intérieures repassent de la plaque blanche sobre à la pastille jaune. Carte Yoni : « Électricien à Cannes » conservé sous le nom.
 - Feuille de style : styles.css?v=16.8.
+
+## 14/11/2026 – Éclair dessiné et bandeau 110 € (branche eclair-dessine, non publié)
+- Éclair jaune dessiné (comme sur Insta) à la place de l'émoji, sur toutes les pages. styles.css?v=16.9.
+- Bandeau « Forfait dépannage 110 € » de l'accueil repris sur dépannage, tarifs et électricien Cannes. Surlignage jaune des prix des cartes tarifs retiré (Maëlys ne l'aime pas).
