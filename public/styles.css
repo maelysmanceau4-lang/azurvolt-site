@@ -699,7 +699,7 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 .detail-content h2{font-size:clamp(1.75rem,3vw,2.4rem)}
 .detail-content h2::after{content:"";display:block;width:46px;height:6px;border-radius:3px;background:#ffc928;margin-top:12px}
 .detail-content h2:empty::after{display:none}
-.tariff-card strong{display:inline-block;background:linear-gradient(transparent 60%,#ffc928 60%,#ffc928 92%,transparent 92%);padding:0 .12em;margin:10px 0 12px -.12em}
+
 
 /* ================= Finitions 13/11 ================= */
 .tariff-grid+p>a{color:var(--azur-soft);font-weight:600;text-decoration:underline;text-underline-offset:3px}
@@ -707,3 +707,7 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 .section.legal{position:relative;isolation:isolate}
 .section.legal::before{content:"";position:absolute;inset:0 0 auto;height:320px;z-index:-1;background-color:#f4f9fe;background-image:linear-gradient(rgba(10,111,209,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(10,111,209,.07) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:linear-gradient(#000 45%,transparent);mask-image:linear-gradient(#000 45%,transparent)}
 .service-aside .underlink{margin:2px 0 6px}
+
+/* ===== Éclair dessiné (comme sur Insta), à la place de l'émoji (14/11) ===== */
+.bolt{font-size:0!important;width:64px;height:84px;right:-14px!important;top:-40px!important;background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 84'><polygon points='43%2C0 4%2C50 27%2C50 17%2C84 60%2C29 35%2C29' fill='%23ffc928'/></svg>") center/contain no-repeat;filter:drop-shadow(0 8px 10px rgba(5,29,49,.25))!important;transform:rotate(10deg)}
+@media(max-width:760px){.bolt{width:44px;height:58px;right:2px!important;top:-28px!important}}
