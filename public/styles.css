@@ -718,3 +718,5 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 .case-grid .m-item{aspect-ratio:3/4}
 .case-grid .case-under img{object-position:50% 40%}
 @media(max-width:639px){.case{margin-top:40px}.case-grid{grid-template-columns:1fr 1fr;gap:10px}.case-grid .case-main{grid-column:1/-1;aspect-ratio:4/3}}
+.cannes-photos{align-items:start}
+.cannes-photos .real-photo figcaption{background:#fff;color:var(--ink)}
