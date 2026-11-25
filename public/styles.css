@@ -711,3 +711,10 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 /* ===== Éclair dessiné (comme sur Insta), à la place de l'émoji (14/11) ===== */
 .bolt{font-size:0!important;width:64px;height:84px;right:-14px!important;top:-40px!important;background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 84'><polygon points='43%2C0 4%2C50 27%2C50 17%2C84 60%2C29 35%2C29' fill='%23ffc928'/></svg>") center/contain no-repeat;filter:drop-shadow(0 8px 10px rgba(5,29,49,.25))!important;transform:rotate(10deg)}
 @media(max-width:760px){.bolt{width:44px;height:58px;right:2px!important;top:-28px!important}}
+
+.case{margin-top:56px}
+.case-title{text-align:center;margin:0 auto 20px;max-width:44rem}
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.case-grid .m-item{aspect-ratio:3/4}
+.case-grid .case-under img{object-position:50% 40%}
+@media(max-width:639px){.case{margin-top:40px}.case-grid{grid-template-columns:1fr 1fr;gap:10px}.case-grid .case-main{grid-column:1/-1;aspect-ratio:4/3}}
