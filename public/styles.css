@@ -714,7 +714,8 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 
 .case{margin-top:56px}
 .case-title{text-align:center;margin:0 auto 20px;max-width:44rem}
-.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.case-grid .m-item{aspect-ratio:3/4}
-.case-grid .case-under img{object-position:50% 40%}
-@media(max-width:639px){.case{margin-top:40px}.case-grid{grid-template-columns:1fr 1fr;gap:10px}.case-grid .case-main{grid-column:1/-1;aspect-ratio:4/3}}
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:640px;margin:0 auto}
+.case-grid .m-item{aspect-ratio:4/5}
+@media(max-width:639px){.case{margin-top:40px}.case-title{font-size:1.1rem}.case-grid{gap:10px}}
+@media(min-width:640px){.case-photos{max-width:560px}}
+@media(max-width:900px){.photo-grid.case-photos{display:grid;grid-template-columns:1fr 1fr;gap:10px;overflow:visible;margin:0 0 30px;padding:0}.photo-grid.case-photos .real-photo{flex:none}}
