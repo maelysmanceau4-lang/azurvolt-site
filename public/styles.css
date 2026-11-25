@@ -712,10 +712,22 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 .bolt{font-size:0!important;width:64px;height:84px;right:-14px!important;top:-40px!important;background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 84'><polygon points='43%2C0 4%2C50 27%2C50 17%2C84 60%2C29 35%2C29' fill='%23ffc928'/></svg>") center/contain no-repeat;filter:drop-shadow(0 8px 10px rgba(5,29,49,.25))!important;transform:rotate(10deg)}
 @media(max-width:760px){.bolt{width:44px;height:58px;right:2px!important;top:-28px!important}}
 
-.case{margin-top:56px}
-.case-title{text-align:center;margin:0 auto 20px;max-width:44rem}
-.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:640px;margin:0 auto}
-.case-grid .m-item{aspect-ratio:4/5}
-@media(max-width:639px){.case{margin-top:40px}.case-title{font-size:1.1rem}.case-grid{gap:10px}}
 @media(min-width:640px){.case-photos{max-width:560px}}
 @media(max-width:900px){.photo-grid.case-photos{display:grid;grid-template-columns:1fr 1fr;gap:10px;overflow:visible;margin:0 0 30px;padding:0}.photo-grid.case-photos .real-photo{flex:none}}
+@media(min-width:901px){.mosaic{grid-template-areas:"a b c" "a d c" "e d f"}.m1{grid-area:a}.m2{grid-area:b}.m3{grid-area:c}.m4{grid-area:d}.m5{grid-area:e}.m6{grid-area:f}}
+.split{display:flow-root}
+.split>div>p:last-child{margin-bottom:0}
+.split-photo{float:right;width:200px;margin:4px 0 14px 28px}
+.split-photo img{aspect-ratio:4/5}
+.card-list{list-style:none;padding:0;margin:18px 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card-list.three{grid-template-columns:repeat(3,1fr)}
+.card-list li{margin:0;padding:16px 18px;border-radius:var(--r-m);background:var(--surface);border:1px solid var(--line);line-height:1.5}
+.card-list li::before{display:none}
+.card-list strong{display:block;margin-bottom:4px;color:var(--ink)}
+.num-list{list-style:none;padding:0;margin:18px 0;counter-reset:n;display:grid;gap:14px}
+.num-list li{position:relative;padding-left:52px;margin:0}
+.num-list li::before{counter-increment:n;content:counter(n);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:800;color:#fff;background:linear-gradient(135deg,var(--marine-2),var(--azur))}
+.num-list strong{display:block;color:var(--ink)}
+@media(max-width:900px){.card-list.three{grid-template-columns:1fr}}
+@media(max-width:639px){.split-photo{width:128px;margin-left:16px}.card-list{grid-template-columns:1fr}}
+.m6 img{object-position:50% 62%}
