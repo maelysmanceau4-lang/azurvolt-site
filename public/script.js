@@ -153,3 +153,29 @@
     update();
   });
 })();
+
+// Tarifs : surligne la colonne du créneau en cours (heure de Paris)
+(() => {
+  const table = document.querySelector('table.zt');
+  if (!table) return;
+  let parts;
+  try {
+    parts = Object.fromEntries(new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', hourCycle: 'h23', weekday: 'short' }).formatToParts(new Date()).map(p => [p.type, p.value]));
+  } catch (e) { return; }
+  const y = +parts.year, m = +parts.month, d = +parts.day, h = +parts.hour;
+  const sunday = /^dim/i.test(parts.weekday);
+  // Jours fériés : dates fixes + lundi de Pâques, Ascension, lundi de Pentecôte
+  const easter = (yr) => { const a = yr % 19, b = Math.floor(yr / 100), c = yr % 100, dd = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3), hh = (19 * a + b - dd - g + 15) % 30, i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - hh - k) % 7, mm = Math.floor((a + 11 * hh + 22 * l) / 451); const mo = Math.floor((hh + l - 7 * mm + 114) / 31), da = ((hh + l - 7 * mm + 114) % 31) + 1; return Date.UTC(yr, mo - 1, da); };
+  const today = Date.UTC(y, m - 1, d), day = 864e5, e0 = easter(y);
+  const fixed = ['01-01', '05-01', '05-08', '07-14', '08-15', '11-01', '11-11', '12-25'];
+  const holiday = fixed.includes(String(m).padStart(2, '0') + '-' + String(d).padStart(2, '0')) || [1, 39, 50].some(n => today === e0 + n * day);
+  let col; // 1 lun-sam journée, 2 soir, 3 nuit, 4 dim. et fériés
+  if (h >= 22 || h < 8) col = 3;
+  else if (sunday || holiday) col = 4;
+  else if (h >= 18) col = 2;
+  else col = 1;
+  table.querySelectorAll('td.main').forEach(td => td.classList.remove('main'));
+  table.querySelectorAll('tbody tr').forEach(tr => { const td = tr.children[col]; if (td) td.classList.add('main'); });
+  const th = table.querySelectorAll('thead th')[col];
+  if (th) { th.classList.add('now'); th.insertAdjacentHTML('beforeend', '<span class="now-tag">Maintenant</span>'); }
+})();

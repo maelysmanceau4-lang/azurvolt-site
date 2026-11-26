@@ -733,3 +733,16 @@ body:has(.mobile-menu[open]) .mobile-actions{visibility:hidden}
 .num-list strong{display:block;color:var(--ink)}
 @media(max-width:900px){.card-list.three{grid-template-columns:1fr}}
 @media(max-width:639px){.split-photo{width:128px;margin-left:16px}.card-list{grid-template-columns:1fr}}
+.zt thead th.now{background:#fff3c1}
+.now-tag{display:block;width:max-content;margin:6px auto 0;padding:2px 8px;border-radius:999px;background:var(--volt);color:var(--volt-ink);font-size:.72rem;font-weight:700}
+/* Pages secteurs : photos terrain compactes sous le hero */
+.section.terrain{padding:48px 0 8px}
+.terrain .section-head{margin-bottom:22px}
+.terrain-photos{max-width:900px;margin:0}
+.terrain-photos .real-photo img{aspect-ratio:1/1}
+.terrain-photos .real-photo figcaption{padding:10px 14px;font-weight:600;color:var(--text-2)}
+.card-list.quartiers{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.terrain-photos .real-photo{background:#fff}
+.terrain-photos .real-photo figcaption{background:#fff;color:var(--ink)}
+.tariff-grid+p{margin-top:16px}
+@media(max-width:900px){.terrain-photos .real-photo{flex:0 0 min(58%,260px)}}
